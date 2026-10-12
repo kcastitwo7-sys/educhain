@@ -1,0 +1,17 @@
+{
+  "name": "educhain",
+  "version": "1.0.0",
+  "description": "EduChain - Scholarship Discovery & Verifiable Credentials on Solana",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.99.0"
+  }
+}

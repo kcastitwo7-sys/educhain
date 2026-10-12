@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About EduChain - Problem, Mission & Blockchain Architecture</title>
+  <meta name="description" content="Learn about EduChain's mission to simplify scholarship discovery, organize student application tracking, and explore verifiable educational credentials on Solana.">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/index.html" class="logo" id="brand-logo" aria-label="EduChain Home">
+        <svg class="logo-icon-svg" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="17" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <path d="M18 5L5 12L18 19L31 12L18 5Z" fill="#06b6d4" />
+          <path d="M9 16.5V23.5C9 27 18 30 18 30C18 30 27 27 27 23.5V16.5" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>EduChain</span>
+        <span class="logo-badge">Solana MVP</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="/scholarships.html" class="nav-link">Scholarships</a></li>
+          <li>
+            <a href="/dashboard.html" class="nav-link">
+              Dashboard
+              <span class="badge-counter" id="nav-tracker-badge" style="display: none;">0</span>
+            </a>
+          </li>
+          <li><a href="/credentials.html" class="nav-link">Credentials</a></li>
+          <li><a href="/about.html" class="nav-link active">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="network-pill" title="Targeting Solana Devnet cluster">
+          <span class="network-dot"></span>
+          <span>Solana Devnet</span>
+        </div>
+
+        <button class="btn-wallet" id="btn-connect-wallet" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <circle cx="16" cy="12" r="2"></circle>
+          </svg>
+          <span>Connect Wallet</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container" style="max-width: 960px;">
+    <div style="padding-top: 3.5rem; margin-bottom: 3rem;">
+      <span class="badge badge-level" style="margin-bottom: 0.75rem;">Mission & Architecture</span>
+      <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">About EduChain</h1>
+      <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.6;">
+        Connecting students with global educational opportunities while building transparent, cryptographic tools for academic achievement verification.
+      </p>
+    </div>
+
+    <!-- The Problem Statement -->
+    <section class="card" style="margin-bottom: 2rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+        <div style="color: var(--status-amber);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+        </div>
+        <h2 style="font-size: 1.45rem; margin: 0;">The Problem We Solve</h2>
+      </div>
+      <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+        Every year, millions of talented students miss life-changing educational scholarships not because they lack qualification, but because scholarship data is fragmented across obscure institutional portals, unverified blogs, and outdated message boards.
+      </p>
+      <ul style="padding-left: 1.25rem; color: var(--text-muted); line-height: 1.7;">
+        <li><strong>Fragmented Information:</strong> Students spend dozens of hours searching multiple websites with conflicting deadlines and unclear eligibility rules.</li>
+        <li><strong>Disorganized Tracking:</strong> Juggling recommendation letters, transcripts, personal statements, and different portal logins leads to missed cutoff dates.</li>
+        <li><strong>Unverified Credentials:</strong> Educational organizations and scholarship providers struggle with document forgery and slow manual verification of academic transcripts.</li>
+      </ul>
+    </section>
+
+    <!-- Why Blockchain on Solana -->
+    <section class="card" style="margin-bottom: 2rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+        <div style="color: var(--cyan-400);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <h2 style="font-size: 1.45rem; margin: 0;">Why Blockchain & Solana?</h2>
+      </div>
+      <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+        We believe blockchain should only be introduced where it provides genuine utility without adding friction for students. In EduChain:
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <div style="background: rgba(15, 23, 42, 0.6); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle);">
+          <strong style="color: var(--cyan-400); display: block; margin-bottom: 0.35rem;">Privacy First</strong>
+          <span style="font-size: 0.88rem; color: var(--text-muted);">Personal documents and transcripts are NEVER stored publicly on-chain. Only cryptographic one-way hashes are anchored.</span>
+        </div>
+        <div style="background: rgba(15, 23, 42, 0.6); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle);">
+          <strong style="color: var(--blue-400); display: block; margin-bottom: 0.35rem;">High Throughput & Low Cost</strong>
+          <span style="font-size: 0.88rem; color: var(--text-muted);">Solana provides sub-second transaction finality and transaction fees under $0.001, making educational micro-anchoring viable.</span>
+        </div>
+        <div style="background: rgba(15, 23, 42, 0.6); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-subtle);">
+          <strong style="color: var(--status-emerald); display: block; margin-bottom: 0.35rem;">Non-Custodial Accessibility</strong>
+          <span style="font-size: 0.88rem; color: var(--text-muted);">Students without a cryptocurrency wallet can still utilize 100% of the scholarship directory and dashboard tracker features.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Checklist (MVP Implemented vs Future Roadmap) -->
+    <section class="card" style="margin-bottom: 2rem;">
+      <h2 style="font-size: 1.45rem; margin-bottom: 1.25rem;">Implementation Status & Roadmap</h2>
+
+      <div style="margin-bottom: 1.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span class="badge badge-verified">Implemented in Working MVP</span>
+        </div>
+        <ul style="padding-left: 1.25rem; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+          <li>Centralized scholarship directory with real-time text search and multi-filtering (Country, Degree level, Funding category, Deadline urgency).</li>
+          <li>Comprehensive scholarship details modal featuring verified official application links.</li>
+          <li>Personal Student Dashboard with 4 summary metric counters and 7 application pipeline stages (Interested, Preparing, Applied, Interview, Accepted, Rejected, Withdrawn).</li>
+          <li>Local persistence via browser <code>localStorage</code> with JSON export and reset capabilities.</li>
+          <li>Dual-mode Verifiable Credentials module with clearly marked Demonstration Mode and connected Solana Devnet Mode.</li>
+          <li>Official Phantom wallet connectivity and Devnet SOL balance inspection via <code>@solana/web3.js</code>.</li>
+          <li>Live cryptographic SHA-256 integrity re-computation and on-chain Devnet Memo anchor broadcasting with Solana Explorer link.</li>
+        </ul>
+      </div>
+
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <span class="badge badge-demo">Future Roadmap Proposals</span>
+        </div>
+        <ul style="padding-left: 1.25rem; font-size: 0.92rem; color: var(--text-muted); line-height: 1.7;">
+          <li>Registered Academic Authority Smart Contract: On-chain registry of accredited university public keys to formally sign verifiable credentials.</li>
+          <li>Encrypted cross-device cloud synchronization with zero-knowledge passphrase encryption.</li>
+          <li>Automated email and calendar deadline alerts integrated with Google Calendar and iCal.</li>
+          <li>Direct institutional partnerships with educational ministries and scholarship trusts in South Asia and globally.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ethical Commitment -->
+    <section style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 3.5rem;">
+      <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--text-main);">Our Ethical Commitment</h3>
+      <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
+        EduChain does not guarantee scholarship awards, admission decisions, or funding disbursements. We do not charge students for accessing scholarship links. Demonstration content is strictly labeled to preserve academic integrity.
+      </p>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <svg class="logo-icon-svg" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="17" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5"/>
+              <path d="M18 5L5 12L18 19L31 12L18 5Z" fill="#06b6d4" />
+            </svg>
+            <span>EduChain</span>
+          </div>
+          <p>Discover Opportunities. Verify Achievements. Build Your Future.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/scholarships.html">Scholarships</a></li>
+            <li><a href="/dashboard.html">Dashboard</a></li>
+            <li><a href="/credentials.html">Credentials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="https://solana.com" target="_blank" rel="noopener noreferrer">Solana Developer Docs</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-disclaimer-box">
+            <strong>Transparent Hackathon Project</strong>
+            Created with clean HTML5, CSS3, Vanilla JavaScript, and Solana Devnet integration.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 EduChain. Open-source educational technology platform.</div>
+        <div>Solana Devnet Cluster Integration</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

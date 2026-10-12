@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduChain - Discover Opportunities. Verify Achievements. Build Your Future.</title>
+  <meta name="description" content="EduChain is a decentralized scholarship discovery and application tracking platform powered by Solana Devnet, empowering students with verified educational credentials.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2306b6d4'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/index.html" class="logo" id="brand-logo" aria-label="EduChain Home">
+        <svg class="logo-icon-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="17" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <path d="M18 5L5 12L18 19L31 12L18 5Z" fill="url(#brandGrad)" />
+          <path d="M9 16.5V23.5C9 27 18 30 18 30C18 30 27 27 27 23.5V16.5" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="18" cy="19" r="3" fill="#22d3ee"/>
+          <circle cx="27" cy="12" r="2.5" fill="#38bdf8"/>
+          <circle cx="9" cy="12" r="2.5" fill="#38bdf8"/>
+          <defs>
+            <linearGradient id="brandGrad" x1="5" y1="5" x2="31" y2="19" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0284c7"/>
+              <stop offset="1" stop-color="#06b6d4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>EduChain</span>
+        <span class="logo-badge">Solana MVP</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/index.html" class="nav-link active">Home</a></li>
+          <li><a href="/scholarships.html" class="nav-link">Scholarships</a></li>
+          <li>
+            <a href="/dashboard.html" class="nav-link">
+              Dashboard
+              <span class="badge-counter" id="nav-tracker-badge" style="display: none;">0</span>
+            </a>
+          </li>
+          <li><a href="/credentials.html" class="nav-link">Credentials</a></li>
+          <li><a href="/about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Solana Network Badge & Connect Button) -->
+      <div class="nav-actions">
+        <div class="network-pill" title="Targeting Solana Devnet cluster">
+          <span class="network-dot"></span>
+          <span>Solana Devnet</span>
+        </div>
+
+        <button class="btn-wallet" id="btn-connect-wallet" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <circle cx="16" cy="12" r="2"></circle>
+          </svg>
+          <span>Connect Wallet</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-badge-wrap">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span>Discover Opportunities • Verify Achievements • Build Your Future</span>
+        </div>
+
+        <h1 class="hero-title">
+          Your Next Opportunity <br><span class="gradient-text">Starts Here.</span>
+        </h1>
+
+        <p class="hero-description">
+          A modern scholarship discovery directory and student application tracker, combined with a future-ready verifiable credential framework on the Solana blockchain.
+        </p>
+
+        <div class="hero-actions">
+          <a href="/scholarships.html" class="btn btn-primary btn-lg" id="hero-btn-explore">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            Explore Scholarships
+          </a>
+
+          <a href="#how-it-works" class="btn btn-secondary btn-lg" id="hero-btn-how">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            How It Works
+          </a>
+        </div>
+
+        <!-- Visual Live Dashboard Preview Mockup -->
+        <div class="hero-preview-wrapper">
+          <div class="hero-preview-inner">
+            <div class="preview-bar">
+              <div class="preview-dots">
+                <span class="preview-dot red"></span>
+                <span class="preview-dot yellow"></span>
+                <span class="preview-dot green"></span>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.78rem;">educhain.app/student-tracker</div>
+              <span class="badge badge-demo">Demo Preview</span>
+            </div>
+
+            <div class="preview-grid">
+              <div class="preview-mini-card">
+                <span class="badge badge-fully" style="font-size: 0.7rem;">Fully Funded</span>
+                <h5>Global STEM Leadership</h5>
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.5rem;">USA • Postgraduate • Tech</p>
+                <div style="font-size: 0.75rem; color: var(--status-emerald); font-weight: 600;">Status: Applied (Reviewing)</div>
+              </div>
+
+              <div class="preview-mini-card">
+                <span class="badge badge-tuition" style="font-size: 0.7rem;">Tuition Waiver</span>
+                <h5>Himalayan Tech Bursary</h5>
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.5rem;">Nepal • Undergraduate • IT</p>
+                <div style="font-size: 0.75rem; color: var(--cyan-400); font-weight: 600;">Status: Preparing Documents</div>
+              </div>
+
+              <div class="preview-mini-card">
+                <span class="badge badge-level" style="font-size: 0.7rem;">Solana Credential</span>
+                <h5>B.Sc. Honors Verification</h5>
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.5rem;">Devnet SHA-256 Digest</p>
+                <div style="font-size: 0.75rem; color: var(--violet-400); font-family: var(--font-mono);">0x9e4b...3f71 • Verified</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How EduChain Works Section -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Streamlined Student Workflow</span>
+          <h2 class="section-title">How EduChain Works</h2>
+          <p class="section-desc">From discovery to application tracking and cryptographic verification, in three straightforward steps.</p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="step-title">Discover Opportunities</h3>
+            <p class="step-desc">
+              Browse an organized directory of scholarships filtered by country (including Nepal and global destinations), education level, funding category, and deadlines.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="step-title">Track Applications</h3>
+            <p class="step-desc">
+              Save opportunities to your personal dashboard. Organize stages from "Interested" to "Applied" and "Accepted", add personal notes, and keep track of critical deadlines.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="step-title">Verify Credentials</h3>
+            <p class="step-desc">
+              Explore tamper-proof educational credential records anchored on Solana Devnet. Prepare for an educational future where achievements are verifiably authentic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Designed for Students & Hackathons</span>
+          <h2 class="section-title">Built with Transparency First</h2>
+          <p class="section-desc">Everything you need to organize your educational path without false promises or complicated bloat.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div style="color: var(--cyan-400); margin-bottom: 0.5rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+              </svg>
+            </div>
+            <h4>Multi-Criteria Filtering</h4>
+            <p>Filter by country, degree level (Undergrad, Postgrad, PhD), funding type (Fully Funded, Tuition Waiver), and urgent deadlines.</p>
+          </div>
+
+          <div class="feature-box">
+            <div style="color: var(--blue-400); margin-bottom: 0.5rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h4>Personal Status Tracker</h4>
+            <p>Organize each application across 7 distinct stages: Interested, Preparing, Applied, Interview, Accepted, Rejected, and Withdrawn.</p>
+          </div>
+
+          <div class="feature-box">
+            <div style="color: var(--status-emerald); margin-bottom: 0.5rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h4>Official Direct Links</h4>
+            <p>Every scholarship links directly to the real application provider. No paywalls, intermediary data traps, or fabricated listings.</p>
+          </div>
+
+          <div class="feature-box">
+            <div style="color: var(--violet-400); margin-bottom: 0.5rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h4>Solana Devnet Ready</h4>
+            <p>Connect your Phantom wallet on Solana Devnet to inspect cryptographic digests, verify hashes, and review public transaction links.</p>
+          </div>
+
+          <div class="feature-box">
+            <div style="color: var(--status-amber); margin-bottom: 0.5rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <h4>Client-Side Persistence</h4>
+            <p>Applications, reminders, and notes persist seamlessly in browser LocalStorage without requiring accounts or tracking your identity.</p>
+          </div>
+
+          <div class="feature-box">
+            <div style="color: var(--cyan-400); margin-bottom: 0.5rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </div>
+            <h4>Honest Transparency</h4>
+            <p>Sample scholarships and mock credentials are explicitly tagged as Demo Data. We never claim artificial partnerships or transactions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blockchain Transparency Section -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="blockchain-transparency-card">
+          <div class="transparency-header">
+            <div>
+              <span class="badge badge-level" style="margin-bottom: 0.5rem;">Architecture Overview</span>
+              <h3 style="font-size: 1.75rem;">The Role of Solana in EduChain</h3>
+              <p style="color: var(--text-muted); max-width: 650px; font-size: 0.95rem;">
+                Why decentralized ledgers make sense for educational credentials and what this MVP delivers today.
+              </p>
+            </div>
+            <div class="transparency-pill">
+              Connected to Solana Devnet
+            </div>
+          </div>
+
+          <div class="transparency-grid">
+            <div class="transparency-point">
+              <h5>1. Non-Custodial & Privacy Preserving</h5>
+              <p>We do NOT store transcripts, diplomas, or personal identification on-chain. Only cryptographic hashes (SHA-256 digests) and institutional authorizations are anchored.</p>
+            </div>
+
+            <div class="transparency-point">
+              <h5>2. Low Latency & Minimal Fees</h5>
+              <p>Solana provides sub-second finality and negligible transaction costs, making high-volume credential issuance economically viable for academic institutions.</p>
+            </div>
+
+            <div class="transparency-point">
+              <h5>3. Transparent Demo vs. Devnet</h5>
+              <p>You can use EduChain 100% without a crypto wallet. When connected to Devnet, real signatures link to the public Solana Explorer for independent auditability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <svg class="logo-icon-svg" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="17" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5"/>
+              <path d="M18 5L5 12L18 19L31 12L18 5Z" fill="#06b6d4" />
+            </svg>
+            <span>EduChain</span>
+          </div>
+          <p>Discover Opportunities. Verify Achievements. Build Your Future.</p>
+          <div style="margin-top: 1rem;">
+            <span class="tag-solana">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+              </svg>
+              Solana Devnet
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="/scholarships.html">Browse Scholarships</a></li>
+            <li><a href="/dashboard.html">Application Tracker</a></li>
+            <li><a href="/credentials.html">Verifiable Credentials</a></li>
+            <li><a href="/about.html">About & Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://solana.com" target="_blank" rel="noopener noreferrer">Solana Web3</a></li>
+            <li><a href="https://explorer.solana.com/?cluster=devnet" target="_blank" rel="noopener noreferrer">Solana Explorer</a></li>
+            <li><a href="https://phantom.app" target="_blank" rel="noopener noreferrer">Phantom Wallet</a></li>
+            <li><a href="#" id="btn-open-settings">Settings & Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-disclaimer-box">
+            <strong>Hackathon MVP Disclaimer</strong>
+            EduChain does not guarantee scholarship awards or admissions. Demonstration records are clearly tagged. Always confirm requirements directly on official provider portals.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 EduChain. Open-source educational technology platform.</div>
+        <div class="footer-tags">
+          <span>Client-Side LocalStorage</span>
+          <span>•</span>
+          <span>Solana Devnet Cluster</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Settings & Privacy Modal -->
+  <div class="modal-backdrop" id="settings-modal" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="settings-title">Settings & Privacy</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-detail-block">
+          <h4>LocalStorage Privacy Notice</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            EduChain stores your saved scholarships, application status choices, and personal notes directly inside your current web browser via <code>localStorage</code>.
+          </p>
+          <ul style="margin-top: 0.5rem;">
+            <li>No personal data or notes are sent to external web servers.</li>
+            <li>Your tracker data is not automatically synchronized across separate browsers or devices.</li>
+            <li>Do not store sensitive financial details, passwords, or seed phrases in notes.</li>
+          </ul>
+        </div>
+
+        <div class="modal-detail-block">
+          <h4>Data Management</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+            Reset your local demonstration records or clear cached tracker items.
+          </p>
+          <button class="btn btn-danger-outline btn-sm" id="btn-clear-settings-data">
+            Clear All Local Storage Data
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close-btn" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

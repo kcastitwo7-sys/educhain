@@ -1,0 +1,283 @@
+[
+  {
+    "id": "demo-001",
+    "name": "Global STEM Leadership Scholarship",
+    "provider": "International Science Foundation",
+    "country": "United States",
+    "educationLevel": "Postgraduate",
+    "subject": "Computer Science, Data Science, Artificial Intelligence",
+    "fundingType": "Fully funded",
+    "fundingDetails": "Full tuition coverage, $24,000 annual living stipend, health insurance, and $2,000 conference travel stipend.",
+    "deadline": "2026-11-30",
+    "eligibility": [
+      "Open to international students worldwide including South Asian candidates",
+      "Undergraduate degree in STEM with minimum GPA of 3.6 / 4.0",
+      "Demonstrated research interest or open-source software contributions",
+      "Proof of English proficiency (TOEFL 95+ or IELTS 7.0+)"
+    ],
+    "requiredDocuments": [
+      "Official academic transcripts",
+      "Statement of Purpose (Research goals & societal impact)",
+      "3 Letters of Recommendation",
+      "Curriculum Vitae / Resume",
+      "Portfolio of relevant projects or publications"
+    ],
+    "applicationInstructions": "Complete the online application form on the provider portal, upload verified academic credentials, and submit research proposal before the deadline.",
+    "officialUrl": "https://fulbrightprogram.org",
+    "sourceUrl": "https://fulbrightprogram.org",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-10-01"
+  },
+  {
+    "id": "demo-002",
+    "name": "Nepal Himalayan Tech & Innovation Bursary",
+    "provider": "Himalaya Education & Tech Trust",
+    "country": "Nepal",
+    "educationLevel": "Undergraduate",
+    "subject": "Information Technology, Software Engineering, Electronics",
+    "fundingType": "Tuition fee waiver",
+    "fundingDetails": "100% tuition waiver for 4-year undergraduate degree plus laptop subsidy of NPR 60,000 for top 5 recipients.",
+    "deadline": "2026-12-15",
+    "eligibility": [
+      "Citizens of Nepal with completed +2 Science or Diploma in Engineering",
+      "Minimum 3.2 GPA in high school board examinations (NEB)",
+      "Household income criteria for need-based consideration",
+      "Commitment to 1 year of community digital literacy initiative"
+    ],
+    "requiredDocuments": [
+      "NEB Character and Mark Certificates",
+      "Citizenship certificate (Nagarikta) or parent verification",
+      "Income recommendation from local Ward office",
+      "500-word personal essay on 'How Technology Can Transform Rural Nepal'"
+    ],
+    "applicationInstructions": "Submit application through the central university scholarship portal along with certified ward documents and statement of purpose.",
+    "officialUrl": "https://tu.edu.np",
+    "sourceUrl": "https://tu.edu.np",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-10-05"
+  },
+  {
+    "id": "demo-003",
+    "name": "Commonwealth Sustainability Excellence Award",
+    "provider": "Commonwealth Scholarship Commission",
+    "country": "United Kingdom",
+    "educationLevel": "Postgraduate",
+    "subject": "Environmental Science, Climate Resilience, Public Policy",
+    "fundingType": "Fully funded",
+    "fundingDetails": "Approved airfare to and from the UK, approved tuition fees, living stipend of £1,347 per month, and thesis grant.",
+    "deadline": "2026-12-31",
+    "eligibility": [
+      "Citizen of or permanent resident in an eligible Commonwealth country",
+      "Hold a first degree of at least upper second class (2:1) honours standard",
+      "Unable to afford to study in the UK without this scholarship",
+      "Development impact proposal aligned with UN Sustainable Development Goals"
+    ],
+    "requiredDocuments": [
+      "Proof of citizenship or refugee status",
+      "Full academic transcripts and university certificates",
+      "Development Impact Statement (4 sections)",
+      "Two signed references uploaded directly by referees"
+    ],
+    "applicationInstructions": "Apply via the CSC Electronic Application System (EAS) and ensure supporting referees submit before the portal closes.",
+    "officialUrl": "https://cscuk.fcdo.gov.uk/apply/",
+    "sourceUrl": "https://cscuk.fcdo.gov.uk",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-09-18"
+  },
+  {
+    "id": "demo-004",
+    "name": "DAAD Clean Energy Research Grant",
+    "provider": "German Academic Exchange Service (DAAD)",
+    "country": "Germany",
+    "educationLevel": "Postgraduate",
+    "subject": "Renewable Energy, Green Hydrogen, Electrical Engineering",
+    "fundingType": "Research funding",
+    "fundingDetails": "Monthly stipend of €1,200, health and accident insurance, travel subsidy, and €460 annual research allowance.",
+    "deadline": "2027-01-15",
+    "eligibility": [
+      "Bachelor's or Master's degree completed within the last 6 years",
+      "Demonstrated research proposal with a hosting German university advisor",
+      "Working knowledge of English (B2/C1) or German (TestDaF level 4)",
+      "Strong academic record with published papers prioritized"
+    ],
+    "requiredDocuments": [
+      "Detailed research proposal (maximum 10 pages)",
+      "Written confirmation from academic host/supervisor in Germany",
+      "Complete CV in Europass format",
+      "Certified copies of all higher education diplomas and grade sheets"
+    ],
+    "applicationInstructions": "Register on the DAAD online portal, upload all German/English sworn translations, and submit to the regional DAAD information center.",
+    "officialUrl": "https://www.daad.de/en/study-and-research-in-germany/scholarships/",
+    "sourceUrl": "https://www.daad.de",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-09-25"
+  },
+  {
+    "id": "demo-005",
+    "name": "Asia-Pacific Digital Frontiers Fellowship",
+    "provider": "Singapore National Innovation Council",
+    "country": "Singapore",
+    "educationLevel": "Undergraduate",
+    "subject": "Cybersecurity, Distributed Systems, Blockchain, Fintech",
+    "fundingType": "Fully funded",
+    "fundingDetails": "Full tuition, SGD 8,000 annual living allowance, one-time computer grant of SGD 2,000, and guaranteed internship placement.",
+    "deadline": "2027-02-01",
+    "eligibility": [
+      "Open to international citizens residing in Asia-Pacific region",
+      "Outstanding academic achievements in mathematics and computing",
+      "Participation in national science olympiads or programming contests is an asset",
+      "Strong leadership and co-curricular extracurricular profile"
+    ],
+    "requiredDocuments": [
+      "High school graduation certificates & standardized test scores",
+      "Coding portfolio link (GitHub/GitLab)",
+      "Two letters of recommendation from math or computer science teachers",
+      "Personal reflection essay on ethical decentralized systems"
+    ],
+    "applicationInstructions": "Submit directly to participating universities (NUS, NTU, SMU) and select the Asia-Pacific Digital Frontiers Fellowship checkbox.",
+    "officialUrl": "https://www.moe.gov.sg/financial-matters/awards-scholarships",
+    "sourceUrl": "https://www.moe.gov.sg",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-10-02"
+  },
+  {
+    "id": "demo-006",
+    "name": "Erasmus Mundus Decentralized Web & Data Masters",
+    "provider": "European Education and Culture Executive Agency",
+    "country": "European Union",
+    "educationLevel": "Postgraduate",
+    "subject": "Distributed Computing, Web3 Technologies, Cryptography",
+    "fundingType": "Fully funded",
+    "fundingDetails": "€1,400 per month for up to 24 months, full tuition waiver across three partner universities, visa and travel costs covered.",
+    "deadline": "2027-01-20",
+    "eligibility": [
+      "Hold a recognized first degree in computer science, mathematics, or related field",
+      "Must study in at least two different European countries during the programme",
+      "Fluent in English (CEFR C1 level or equivalent IELTS 7.0)",
+      "Global applicants eligible regardless of country of origin"
+    ],
+    "requiredDocuments": [
+      "Certified English translation of bachelor degree & transcripts",
+      "Motivation letter explaining track preference and career vision",
+      "Curriculum vitae highlighting technical projects and open-source work",
+      "Passport scan and two reference contact forms"
+    ],
+    "applicationInstructions": "Apply through the consortium website during the open call. Shortlisted candidates will be invited for an online interview in February.",
+    "officialUrl": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters",
+    "sourceUrl": "https://erasmus-plus.ec.europa.eu",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-09-30"
+  },
+  {
+    "id": "demo-007",
+    "name": "Global Women in Tech & Engineering Fellowship",
+    "provider": "Ada Lovelace International Foundation",
+    "country": "Canada",
+    "educationLevel": "Undergraduate",
+    "subject": "Software Engineering, Robotics, Biomedical Engineering",
+    "fundingType": "Partially funded",
+    "fundingDetails": "CAD $15,000 per academic year renewable for 4 years, mentorship pairing with senior female industry leaders, and annual summit pass.",
+    "deadline": "2027-03-01",
+    "eligibility": [
+      "Female-identifying students admitted to an accredited Canadian university engineering program",
+      "Minimum 85% high school average or equivalent 3.5+ GPA",
+      "Demonstrated passion for mentorship or promoting diversity in STEM",
+      "International applicants warmly welcomed"
+    ],
+    "requiredDocuments": [
+      "High school transcripts and proof of Canadian university conditional offer",
+      "Video submission (2 minutes) introducing your engineering passion project",
+      "One reference letter from a teacher, community mentor, or employer",
+      "Financial need summary statement (optional)"
+    ],
+    "applicationInstructions": "Upload your application and unlisted YouTube/Vimeo video link to the Ada Lovelace Foundation student dashboard.",
+    "officialUrl": "https://www.educanada.ca/scholarships-bourses/index.aspx",
+    "sourceUrl": "https://www.educanada.ca",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-10-04"
+  },
+  {
+    "id": "demo-008",
+    "name": "Nordic Clean Energy Sustainability Tuition Award",
+    "provider": "Swedish Institute & Nordic Universities Council",
+    "country": "Sweden",
+    "educationLevel": "Postgraduate",
+    "subject": "Renewable Systems, Smart Grids, Circular Economy",
+    "fundingType": "Tuition fee waiver",
+    "fundingDetails": "100% tuition fee waiver for the entire 2-year master's programme. Recipients also gain access to the Nordic Alumni Network for Sustainability.",
+    "deadline": "2027-02-15",
+    "eligibility": [
+      "Citizens of designated DAC-listed countries (including Nepal, Bangladesh, Vietnam)",
+      "Minimum 3,000 hours of demonstrated work experience, research, or volunteer leadership",
+      "Admitted to an eligible Swedish master's programme via Universityadmissions.se",
+      "Commitment to return to home country or region to implement sustainability initiatives"
+    ],
+    "requiredDocuments": [
+      "Swedish Institute specific CV template",
+      "Proof of work and leadership experience forms (official stamps required)",
+      "Two letters of reference on official templates",
+      "Valid passport copy"
+    ],
+    "applicationInstructions": "First apply to Swedish universities via the national portal, then apply for the SI scholarship using your application number.",
+    "officialUrl": "https://si.se/en/apply/scholarships/",
+    "sourceUrl": "https://si.se",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-09-15"
+  },
+  {
+    "id": "demo-009",
+    "name": "Australian Research Discovery Scholarship (RTP)",
+    "provider": "Australian Government Department of Education",
+    "country": "Australia",
+    "educationLevel": "PhD",
+    "subject": "Applied Artificial Intelligence, Quantum Computing, Bio-informatics",
+    "fundingType": "Fully funded",
+    "fundingDetails": "AUD $34,500 annual tax-free stipend for up to 3.5 years, full tuition fee offset, overseas student health cover (OSHC), and relocation allowance.",
+    "deadline": "2027-03-31",
+    "eligibility": [
+      "Domestic and international postgraduate researchers",
+      "First Class Honours degree, Master by Research, or equivalent demonstrated research track record",
+      "Endorsement by an accredited principal research supervisor in Australia",
+      "English language proficiency requirements met"
+    ],
+    "requiredDocuments": [
+      "Research proposal (2,000 words) with methodology and expected outcomes",
+      "Academic curriculum vitae detailing peer-reviewed conference or journal papers",
+      "Complete certified transcripts and degree testamurs",
+      "Two academic referee reports"
+    ],
+    "applicationInstructions": "Apply concurrently with your PhD candidature application at the participating Australian university graduate research school.",
+    "officialUrl": "https://www.education.gov.au/research-block-grants/research-training-program",
+    "sourceUrl": "https://www.education.gov.au",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-10-06"
+  },
+  {
+    "id": "demo-010",
+    "name": "South Asian Young Changemakers Grassroots Grant",
+    "provider": "South Asia Youth Empowerment Council",
+    "country": "Regional (Nepal, India, Bangladesh, Sri Lanka)",
+    "educationLevel": "Undergraduate",
+    "subject": "Social Sciences, Public Health, Environmental Policy",
+    "fundingType": "Partially funded",
+    "fundingDetails": "$5,000 annual educational grant, seed funding of $2,500 for a local community initiative, and regional exchange summit participation.",
+    "deadline": "2027-04-15",
+    "eligibility": [
+      "Youth aged 17–25 currently enrolled or accepted into an undergraduate programme in South Asia",
+      "Active track record in local community service, youth leadership, or environmental action",
+      "Demonstrated financial need or first-generation university student status",
+      "Commitment to report on community project milestones every 6 months"
+    ],
+    "requiredDocuments": [
+      "Proof of university enrollment or acceptance letter",
+      "Community project pitch (1 page) explaining the local challenge addressed",
+      "One recommendation letter from a local NGO, teacher, or community leader",
+      "Short personal bio and photo"
+    ],
+    "applicationInstructions": "Complete the online application form and attach your community impact proposal and recommendation letter.",
+    "officialUrl": "https://youth.un.org",
+    "sourceUrl": "https://youth.un.org",
+    "verificationStatus": "Demo Data",
+    "lastChecked": "2026-10-08"
+  }
+]

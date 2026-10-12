@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Application Tracker Dashboard - EduChain</title>
+  <meta name="description" content="Organize your scholarship applications, track status updates from Preparing to Accepted, record notes, and monitor deadlines.">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/index.html" class="logo" id="brand-logo" aria-label="EduChain Home">
+        <svg class="logo-icon-svg" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="17" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <path d="M18 5L5 12L18 19L31 12L18 5Z" fill="#06b6d4" />
+          <path d="M9 16.5V23.5C9 27 18 30 18 30C18 30 27 27 27 23.5V16.5" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>EduChain</span>
+        <span class="logo-badge">Solana MVP</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="/scholarships.html" class="nav-link">Scholarships</a></li>
+          <li>
+            <a href="/dashboard.html" class="nav-link active">
+              Dashboard
+              <span class="badge-counter" id="nav-tracker-badge" style="display: none;">0</span>
+            </a>
+          </li>
+          <li><a href="/credentials.html" class="nav-link">Credentials</a></li>
+          <li><a href="/about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="network-pill" title="Targeting Solana Devnet cluster">
+          <span class="network-dot"></span>
+          <span>Solana Devnet</span>
+        </div>
+
+        <button class="btn-wallet" id="btn-connect-wallet" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <circle cx="16" cy="12" r="2"></circle>
+          </svg>
+          <span>Connect Wallet</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div style="padding-top: 2.5rem; margin-bottom: 2rem;">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h1 style="font-size: 2.25rem; margin-bottom: 0.35rem;">Student Application Tracker</h1>
+          <p style="color: var(--text-muted); font-size: 1rem; margin: 0;">
+            Track scholarship milestones, manage submission checklists, and monitor deadlines locally.
+          </p>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="/scholarships.html" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            Add More Scholarships
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary Metrics Grid -->
+    <section class="dashboard-metrics-grid">
+      <!-- Total Saved -->
+      <div class="metric-card">
+        <div class="metric-header">
+          <span>Saved Scholarships</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-400)" stroke-width="2">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <div class="metric-value" id="metric-total-saved">0</div>
+        <div class="metric-desc">Opportunities in your tracker</div>
+      </div>
+
+      <!-- Preparing -->
+      <div class="metric-card">
+        <div class="metric-header">
+          <span>In Preparation</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue-400)" stroke-width="2">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+          </svg>
+        </div>
+        <div class="metric-value text-blue" id="metric-preparing">0</div>
+        <div class="metric-desc">Interested or preparing documents</div>
+      </div>
+
+      <!-- Submitted -->
+      <div class="metric-card">
+        <div class="metric-header">
+          <span>Submitted & Advanced</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--status-emerald)" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="metric-value text-emerald" id="metric-applied">0</div>
+        <div class="metric-desc">Applied, Interview, or Accepted</div>
+      </div>
+
+      <!-- Upcoming Deadlines -->
+      <div class="metric-card">
+        <div class="metric-header">
+          <span>Upcoming Deadlines</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--status-amber)" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <div class="metric-value text-amber" id="metric-upcoming-deadlines">0</div>
+        <div class="metric-desc">Deadlines within 60 days</div>
+      </div>
+    </section>
+
+    <!-- Status Pipeline Tabs -->
+    <section>
+      <div style="margin-bottom: 0.75rem; font-size: 0.88rem; color: var(--text-muted); font-weight: 600;">
+        Filter by Application Pipeline Stage:
+      </div>
+      <div class="tracker-status-tabs" id="tracker-status-tabs">
+        <button class="tracker-tab active" data-status="all">All Stages</button>
+        <button class="tracker-tab" data-status="Interested">Interested</button>
+        <button class="tracker-tab" data-status="Preparing">Preparing</button>
+        <button class="tracker-tab" data-status="Applied">Applied</button>
+        <button class="tracker-tab" data-status="Interview">Interview</button>
+        <button class="tracker-tab" data-status="Accepted">Accepted</button>
+        <button class="tracker-tab" data-status="Rejected">Rejected</button>
+        <button class="tracker-tab" data-status="Withdrawn">Withdrawn</button>
+      </div>
+    </section>
+
+    <!-- Application Tracker Cards List -->
+    <section>
+      <div id="tracker-cards-container" class="tracker-cards-container" aria-live="polite">
+        <!-- Rendered via js/dashboard.js -->
+      </div>
+    </section>
+
+    <!-- LocalStorage Notice & Storage Controls -->
+    <section style="margin-top: 2rem;">
+      <div class="storage-notice-card">
+        <div>
+          <strong style="color: var(--text-main); display: block; margin-bottom: 0.25rem;">
+            Browser Storage & Privacy Architecture
+          </strong>
+          <div>
+            All changes, statuses, and notes are saved in your current browser's <code>localStorage</code>. Data is not transmitted to any remote database or synchronized across devices.
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem;">
+          <button id="btn-export-storage" class="btn btn-secondary btn-sm" type="button">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Export Backup (JSON)
+          </button>
+          <button id="btn-clear-storage" class="btn btn-danger-outline btn-sm" type="button">
+            Reset Tracker Data
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <svg class="logo-icon-svg" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="17" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5"/>
+              <path d="M18 5L5 12L18 19L31 12L18 5Z" fill="#06b6d4" />
+            </svg>
+            <span>EduChain</span>
+          </div>
+          <p>Discover Opportunities. Verify Achievements. Build Your Future.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/scholarships.html">Browse Scholarships</a></li>
+            <li><a href="/credentials.html">Verifiable Credentials</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Privacy</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+            Local-only data storage prevents unauthorized tracking of your education plans.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-disclaimer-box">
+            <strong>Application Notice</strong>
+            Application decisions and official deadlines reside with the scholarship awarding bodies. EduChain is an organizing platform.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 EduChain. Open-source educational technology platform.</div>
+        <div>Client-Side LocalStorage Persistence</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
